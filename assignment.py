@@ -737,11 +737,11 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 50:
 # Create:
-#
+amount_paid = 150
 # amount_paid = 150
 #
 # Then create:
-#
+change_received = amount_paid - total_with_shipping
 # change_received
 #
 # Determine how much change should be returned.
@@ -759,13 +759,13 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 51:
 # Create:
-#
+current_year = 2026
 # current_year = 2026
 #
 # Ask the user what year they were born.
 #
 # Store their answer inside:
-#
+birth_year = int(input("what year were you born: "))
 # birth_year
 #
 # Make sure you can perform arithmetic with it.
@@ -774,7 +774,7 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 52:
 # Create:
-#
+approximate_age = current_year - birth_year
 # approximate_age
 #
 # Calculate the user's approximate age.
@@ -783,7 +783,7 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 53:
 # Create a variable named:
-#
+age_as_string = str(approximate_age)
 # age_as_string
 #
 # Convert approximate_age into a String.
@@ -794,7 +794,7 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 54:
 # Create:
-#
+age_message = "You are approximately " + age_as_string + "years old."
 # age_message
 #
 # Using STRING CONCATENATION, make age_message contain:
@@ -819,13 +819,15 @@ total_with_shipping = shipping_cost + subtotal
 # Ask the user for THREE whole numbers.
 #
 # Store them in:
-#
+number1 = int(input("give a whole number: "))
+number2 = int(input("give another whole number: "))
+number3 = int(input("give one more whole number: "))
 # number1
 # number2
 # number3
 #
 # Create:
-#
+combined_total = number1 + number2 + number3
 # combined_total
 #
 # Add all three numbers together.
@@ -834,7 +836,7 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 56:
 # Create:
-#
+average = combined_total / 3
 # average
 #
 # Calculate the average of the THREE numbers.
@@ -848,7 +850,7 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 57:
 # Create:
-#
+doubled_average = average * 2
 # doubled_average
 #
 # Make its value TWO TIMES the average.
@@ -860,7 +862,7 @@ total_with_shipping = shipping_cost + subtotal
 
 # TASK 58:
 # Create:
-#
+final_answer = doubled_average - number1
 # final_answer
 #
 # Subtract number1 from doubled_average.
@@ -883,7 +885,7 @@ total_with_shipping = shipping_cost + subtotal
 #
 # Fix the line below so score stores the correct DATA TYPE.
 
-score = "95"
+score = 95
 
 
 
@@ -896,7 +898,7 @@ score = "95"
 #
 # Do not replace the user's input with a number.
 
-# user_number = input("Enter a number: ")
+# user_number = int(input("Enter a number: "))
 # answer = user_number + 10
 # print(answer)
 
@@ -909,7 +911,7 @@ score = "95"
 #
 # Fix the code WITHOUT changing the values 10 and 5.
 
-# first = "10"
+# first = 10
 # second = 5
 # total = first + second
 # print(total)
@@ -923,7 +925,7 @@ score = "95"
 
 student = "Alex"
 
-# print("student")
+# print(student)
 
 
 
@@ -940,18 +942,27 @@ student = "Alex"
 # - Their birth year
 # - Their favorite number
 #
-# You decide what variables to create.
+user_first_name = input("What is your first name: ")
+user_last_name = input("What is your last name: ")
+user_birth_year = int(input("What year were you born: "))
+user_favorite_number = int(input("What is your favorite number: "))
+#  You decide what variables to create.
 #
 # Then your program must:
 #
 # 1. Combine their first and last name into ONE variable.
+user_full_name = user_first_name + " " + user_last_name
 # 2. Calculate their approximate age using 2026.
+user_approximate_age = 2026 - user_birth_year
 # 3. Multiply their favorite number by their approximate age.
+random_number = user_favorite_number * user_approximate_age
 # 4. Store EVERY calculated result inside a variable.
 # 5. Print a personalized message containing their full name.
+print("You are " + user_full_name)
 # 6. Print their approximate age.
+print("You are " + str(user_approximate_age) + " years old")
 # 7. Print the result of their favorite number multiplied by their age.
-#
+print(random_number)
 # IMPORTANT:
 #
 # You are NOT being given the variable names for this problem.
